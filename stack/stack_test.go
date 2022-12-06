@@ -7,7 +7,7 @@ import (
 )
 
 func Test_stack(t *testing.T) {
-	stack := NewStack()
+	stack := New()
 
 	assert.True(t, stack.IsEmpty(), "IsEmpty() should return true")
 

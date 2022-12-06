@@ -4,24 +4,24 @@ type Stack struct {
 	values []int
 }
 
-// NewStack returns a new pointer instance of Stack
-func NewStack() *Stack {
+// New returns a new pointer instance of Stack
+func New() *Stack {
 	return &Stack{
 		values: make([]int, 0),
 	}
 }
 
 // Push adds an element to the top of the stack
-func (s *Stack) Push(n int) {
-	s.values = append(s.values, n)
+func (s *Stack) Push(v int) {
+	s.values = append(s.values, v)
 }
 
-// Pop removes an element from the top of the stack
+// Pop returns an element from the top of the stack and removes it from the stack
 func (s *Stack) Pop() int {
-	res := s.values[len(s.values)-1]
+	val := s.values[len(s.values)-1]
 	s.values = s.values[:len(s.values)-1]
 
-	return res
+	return val
 }
 
 // Len returns the number of stack values
