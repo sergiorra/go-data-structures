@@ -24,7 +24,12 @@ func (s *Stack) Pop() int {
 	return res
 }
 
+// Len returns the number of stack values
+func (s *Stack) Len() int {
+	return len(s.values)
+}
+
 // IsEmpty returns true if the stack is empty
 func (s *Stack) IsEmpty() bool {
-	return len(s.values) == 0
+	return s.Len() == 0
 }
