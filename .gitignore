@@ -11,5 +11,18 @@
 # Output of the go coverage tool, specifically when used with LiteIDE
 *.out
 
+# IntelliJ-based editors
+/.idea/
+
+# Visual studio Code
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+!.vscode/*.code-snippets
+.history/
+*.vsix
+
 # Dependency directories (remove the comment below to include it)
 # vendor/
